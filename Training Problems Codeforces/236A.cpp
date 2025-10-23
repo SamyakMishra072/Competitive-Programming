@@ -29,5 +29,20 @@ CHAT WITH HER!
 Note
 For the first example. There are 6 distinct characters in "wjmzbmr". These characters are: "w", "j", "m", "z", "b", "r". So wjmzbmr is a female and you should print "CHAT WITH HER!".*/
 
-
-
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string uname;
+    cin>>uname;
+    set<char>u;
+    for (char c:uname) {
+        u.insert(c);
+    }
+    int n=u.size();
+    if (n%2==0) {
+        cout<<"CHAT WITH HER!"<<endl;
+    } else {
+        cout<<"IGNORE HIM!"<<endl;
+    }
+    return 0;
+}
